@@ -35,9 +35,10 @@ void print(struct node *head){
 
 struct wrapper *add(struct node *head1,struct node *head2){
 	
-	struct wrapper *result = (struct wrapper *)malloc(sizeof(struct wrapper));
+	struct wrapper *result;
 	
 	if(head1== NULL){
+		result = (struct wrapper *)malloc(sizeof(struct wrapper));
 		return result;
 	}
 	
